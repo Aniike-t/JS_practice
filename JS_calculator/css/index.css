@@ -1,0 +1,112 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #FFF5EF;
+}
+h1{
+    transition: 0.5s all;
+    font-size: 26px;
+}
+span{
+    font-size: 26px;
+    transition: 0.30s all;
+}
+.calculatorcon{
+    margin-top: 80px;
+    box-shadow: #ae7241 0px 8px 35px;
+    color:#7C7C7C;
+    justify-content: center;
+    display: flex;
+    height: 500px;
+    width: 300px;
+    border: 4px solid #B79A85;
+    border-radius: 27px;
+    background-color: #FFFFFF ;
+}
+#Display{
+    z-index: 10;
+    font-family: 'Lucida Sans';
+    color: #FFF5EF;
+    text-align: end;
+    padding: 10px;
+    width: 250px;
+    height: 90px;
+    border-radius: 13px;
+    margin-top:37px ;
+    margin-left: 10px;
+    background: rgb(255,196,144);
+    background: linear-gradient(90deg, rgba(255,196,144,1) 0%, rgba(255,184,140,1) 50%, rgba(255,173,136,1) 100%);
+    animation: moveShadow 0.2s ease-in-out
+}
+button{
+    color:#7C7C7C;
+    padding: 10px;
+    width: 69px;
+    height: 65px;
+    font-size: 22px;
+    font-weight: 600;
+    border:0px;
+    background-color: #ffffff00;
+    border-radius: 15px;
+}
+button:hover{
+    background-color: #FFF6F1;
+    transition: 0.25s ease-in-out;
+    border-radius: 15px;
+    color:#FFC18F;
+}
+.de{
+    background-color: #FFF6F1;
+    color:#FFC18F;
+    position: absolute;
+    margin-top: -127px;
+    margin-left:220px ;
+    border-radius: 15px;
+    height: 125px;
+    width: 69px;
+}
+.de:hover{
+    border-radius: 15px;
+    background-color: #FFC18F;
+    color:#FFF6F1;
+    transition: 0.25s ease-in-out;
+}
+#shadow1{
+    z-index: 0;
+    border: 0px solid black;
+    width: 220px;
+    height: 13px;
+    margin-left: 35px;
+    margin-top: -19px;
+    border-radius: 0px 0px 15px 15px;
+    background-color: #ffceb3cc;
+    animation: moveShadow 0.2s ease-in-out;
+}
+#shadow2{
+    z-index: 0;
+    border: 0px solid black;
+    width: 180px;
+    height: 10px;
+    margin-left: 53px;
+    margin-top: 0px;
+    border-radius: 0px 0px 15px 15px;
+    background-color: #ffdfcbd2;
+    animation: moveShadow 0.2s ease-in-out;
+}
+@keyframes moveShadow {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(2px, 2px);
+    }
+    50% {
+        transform: translate(0px, 0px);
+    }
+    75% {
+        transform: translate(-2px, -2px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}

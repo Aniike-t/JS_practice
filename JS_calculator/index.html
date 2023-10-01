@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="src/index.js" async></script>
+</head>
+<body>
+    <div class="calculatorcon">
+        <div class="displaycon">
+            <h1 id="Display">
+                <span id="input"></span>
+                    <br>
+                <span id="output"></span>
+            </h1>
+            <div id="shadow1"></div>
+            <div id="shadow2"></div>
+        <div>
+            <div>
+                <button onclick="clearDisplay()">C</button>
+                <button onclick="appendToInput('/')">÷</button>
+                <button onclick="appendToInput('*')">×</button>
+                <button onclick="backspace()">←</button>
+            </div>
+            <div>
+                <button onclick="appendToInput('7')">7</button>
+                <button onclick="appendToInput('8')">8</button>
+                <button onclick="appendToInput('9')">9</button>
+                <button onclick="appendToInput('-')">-</button>
+            </div>
+            <div>
+                <button onclick="appendToInput('4')">4</button>
+                <button onclick="appendToInput('5')">5</button>
+                <button onclick="appendToInput('6')">6</button>
+                <button onclick="appendToInput('+')">+</button>
+            </div>
+            <div>
+                <button onclick="appendToInput('1')">1</button>
+                <button onclick="appendToInput('2')">2</button>
+                <button onclick="appendToInput('3')">3</button>
+            </div>
+            <div>
+                <button onclick="appendToInput('%')">%</button>
+                <button onclick="appendToInput('0')">0</button>
+                <button onclick="appendToInput('.')">.</button>
+            </div>
+        </div>
+        <button class="de" onclick="calculateResult()">=</button>
+        
+        
+</body>
+</html>
